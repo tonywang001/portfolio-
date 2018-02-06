@@ -39,10 +39,10 @@
 .name-info .name span {
     font-size: 3em;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .name-info .title {
@@ -75,8 +75,8 @@ hr {
 .project-container {
     margin-top: 15px;
     margin-bottom: 15px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .projects {
@@ -106,6 +106,12 @@ hr {
 
 .project-photo img {
     width: 100%;
+    height: auto;
+}
+
+.project p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* device specific styles */
@@ -115,7 +121,7 @@ hr {
     }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 940px) {
     .resume-container {
         margin-left: 50px;
         margin-right: 50px;
@@ -125,10 +131,10 @@ hr {
         width: 100%;
     }
 
-    .project img {
-        max-width: 400px;
+     .project img {
+        max-width: 225px;
         max-height: 225px;
-    }
+    } 
 }
 
 @media screen and (max-width: 600px) {
@@ -139,8 +145,20 @@ hr {
 }
 
 @media screen and (max-width: 520px) {
+    .banner-container {
+        flex-direction: column;
+    }
+
     .logo {
-        display: none;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .logo img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .name-info {
